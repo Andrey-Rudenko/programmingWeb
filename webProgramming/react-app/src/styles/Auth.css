@@ -1,6 +1,6 @@
-.auth .form {
+.form {
     text-align: center;
-    width: 30%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
@@ -40,4 +40,29 @@
 
 .auth h1 {
     font-size: 40px;
+}
+
+.autocomplete {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+.blackButton {
+    margin-top: 15px;
+    border: none;
+    background: #1F2627;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.25), -3px -3px 15px rgba(255, 255, 255, 0.36);
+    border-radius: 13px;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 25px;
+    width: 200px;
+    height: 65px;
+    left: 272px;
+    top: 249px;
+}
+
+.blackButton:active{
+    box-shadow: inset 3px 3px 9px rgba(0, 0, 0, 0.75), inset -2px -2px 7px rgba(255, 255, 255, 0.37);
 }
