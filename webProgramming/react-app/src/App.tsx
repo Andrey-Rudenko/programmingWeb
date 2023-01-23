@@ -1,15 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useContext } from 'react';
 import './styles/App.css';
 import './styles/Auth.css';
-import Authorization from './components/Authorization';
+import { AuthContext, AuthContextProvider } from './contexts/AuthContext';
+import AuthPage from './pages/AuthPage';
+import ProfileForm from './components/ProfileForm';
 
 function App() {
-  return (
-      <div className="App">
-          <Authorization/>
-    </div>
-  );
+
+    const { isAuthenticated } = useContext(AuthContext);
+
+    return (
+        <div className="App">
+            {
+                // !isAuthenticated && <AuthPage/>
+                <ProfileForm/>
+            }
+        </div>
+    );
 }
 
 export default App;
