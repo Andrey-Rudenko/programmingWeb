@@ -1,6 +1,6 @@
 .form {
     text-align: center;
-    width: 40%;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5%;
@@ -8,6 +8,10 @@
     background: #55B9F4;
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.41), -8px -8px 13px rgba(255, 255, 255, 0.26);
     border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
 }
 .auth button {
     border: none;
@@ -61,6 +65,8 @@
     height: 65px;
     left: 272px;
     top: 249px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blackButton:active{

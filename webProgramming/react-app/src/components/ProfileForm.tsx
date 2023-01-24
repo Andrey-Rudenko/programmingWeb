@@ -1,8 +1,4 @@
-﻿import React from 'react';
-import Button from '@mui/material/Button';
-import AuthInput from '../obejcts/AuthInput';
-import authRepository from '../Repositories/AuthRepository';
-import { Autocomplete, Checkbox, FormControlLabel, FormGroup, TextField } from '@mui/material';
+﻿import { Autocomplete, Checkbox, FormControlLabel, FormGroup, TextField } from '@mui/material';
 
 const ProfileForm = () => {
 
@@ -10,7 +6,13 @@ const ProfileForm = () => {
         <div className="profile">
             <form className="form">
                 <h1>Анкета</h1>
-                <TextField id="outlined-basic" label="Почта" variant="outlined" />
+                <TextField
+                    variant='filled'
+                    size='small'
+                    label='E-mail'
+                    sx={{ m: 2 }}
+                >
+                </TextField>
                 <Autocomplete className="autocomplete"
                     multiple
                     id="tags-outlined"
@@ -43,10 +45,21 @@ const ProfileForm = () => {
                         />
                     )}
                 />
-            
-                <FormControlLabel control={<Checkbox defaultChecked />} label="Ищу собеседника" />
-                <FormControlLabel control={<Checkbox defaultChecked />} label="Хочу быть ментором" />
+
+                <div className="formDiv">
+                    <FormControlLabel control={<Checkbox defaultChecked />} label="Ищу собеседника" />
+                    <FormControlLabel control={<Checkbox defaultChecked />} label="Хочу быть ментором" />
                     <FormControlLabel control={<Checkbox defaultChecked />} label="Ищу ментора" />
+                </div>
+                
+
+                <TextField
+                    variant='filled'
+                    multiline
+                    label='О себе'
+                    sx={{ m: 2 }}
+                >
+                </TextField>
 
                 <button className="blackButton">Сохранить</button>
         

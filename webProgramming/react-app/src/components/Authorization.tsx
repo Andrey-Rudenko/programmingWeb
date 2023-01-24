@@ -31,7 +31,7 @@ const Authorization = () => {
                     <input ref={passwordRef}></input>
                 </div>
 
-                <button onClick={buttonHandler}>Войти</button> {/*preventDefault*/}
+                <button className="blackButton" onClick={buttonHandler}>Войти</button> {/*preventDefault*/}
             </form>
         </div>
         );
